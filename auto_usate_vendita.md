@@ -5,7 +5,7 @@ modello					STRINGA			VARCHAR(20)			NOTNULL
 allestimento			STRINGA			VARCHAR(50)			NULL
 colore_carrozzeria		STRINGA			VARCHAR(20)			NOTNULL
 alimentazione			STRINGA			VARCHAR(20)			NOTNULL
-categoria_euro			NUMERO			TINYINT				NOTNULL
+classe_ambientale		NUMERO			TINYINT				NULL
 cerchi_lega				BOOLEANO		TINYINT				NULL
 anno_produzione			DATA			YEAR				NOTNULL
 data_immatricolazione	DATA			DATE				NOTNULL
@@ -15,8 +15,8 @@ data_revisione			DATA			DATE				NOTNULL
 data_pneumatici			DATA			DATE				NULL
 ultimo_proprietario		STRINGA			VARCHAR(50)			NOTNULL
 descrizione_generale	STRINGA			TEXT				NULL
-condizioni_meccaniche	STRINGA			TEXT				NULL
-condizioni_estetiche	STRINGA			TEXT				NULL
+condizioni_meccaniche	NUMERO			TINYINT				NULL
+condizioni_estetiche	NUMERO			TINYINT				NULL
 conto_vendita			BOOLEANO		TINYINT				NOTNULL
 recapito_proprietario	STRINGA			VARCHAR				NULL
 vendibile_subito		BOOLEANO		TINYINT				NOTNULL
